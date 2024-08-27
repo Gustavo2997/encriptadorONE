@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header_logo" src="/images/logo.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="izquierda">
+                <textarea class="ingreso_texto" id="ingresoTexto" placeholder="Ingrese texto aquí"></textarea>
+                <div class="izquierda_footer">
+                    <span class="izquierda_info">Solo letras minúsculas y sin acentos</span>
+                    <div class="izquierda_botones">
+                        <button class="boton_encriptar" id="botonEncriptar">Encriptar</button>
+                        <button class="boton_desencriptar" id="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+                 
+            </div>
+            <div class="derecha ajustar" id="derecha">
+                <img class="muneco" src="/images/muneco.png" id="muneco">
+                <textarea class="mensaje_final ajustar" id="mensajeFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p class="derecha_info" id="derechaInfo">Ingrese en tetxo que desee encriptar o desencriptar.</p>
+                <button class="boton_copiar oculto" id="botonCopiar">Copiar</button>
+            </div>
+        </div>
+        
+    </main>
+<script src="/js/script.js"></script>
+</body>
+</html>
